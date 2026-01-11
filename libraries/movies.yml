@@ -1,0 +1,9 @@
+############################################################
+# Movies Library
+############################################################
+
+collections:
+  Trending Movies:
+    smart_filter:
+      sort_by: audience_rating.desc
+      limit: 50

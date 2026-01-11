@@ -1,0 +1,28 @@
+############################################################
+# Kometa Global Configuration
+############################################################
+
+libraries:
+  Movies:
+    metadata_path:
+      - file: libraries/movies.yml
+
+  Kids Movies:
+    metadata_path:
+      - file: libraries/movies-kids.yml
+
+  TV Shows:
+    metadata_path:
+      - file: libraries/tv.yml
+
+  Kids TV:
+    metadata_path:
+      - file: libraries/tv-kids.yml
+
+settings:
+  cache: true
+  cache_expiration: 60
+  run_order:
+    - metadata
+    - collections
+    - overlays
