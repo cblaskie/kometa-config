@@ -6,7 +6,8 @@ libraries:
   Movies:
     metadata_path:
       - file: libraries/movies.yml
-
+    report_path: config/reports/movies.png # Optional: creates a nice visual report
+  
   Kids Movies:
     metadata_path:
       - file: libraries/movies-kids.yml
@@ -22,6 +23,12 @@ libraries:
 settings:
   cache: true
   cache_expiration: 60
+  # --- ADD THESE FOR POSTERIZARR ---
+  asset_directory: config/assets  # Matches your Docker volume mapping
+  asset_folders: true             # Matches Posterizarr's folder structure
+  asset_depth: 0
+  prioritize_assets: true         # Forces Kometa to use your Posterizarr art
+  # ---------------------------------
   run_order:
     - metadata
     - collections
