@@ -1,8 +1,19 @@
 ############################################################
-# Kids Movies Library
+# Kids Movies - Blaskielab Metadata
 ############################################################
 
+metadata_path:
+  - pmm: holiday          # Dynamic Christmas/Halloween rotation
+  - pmm: franchise        # Groups Toy Story, Cars, etc.
+  - pmm: disney_classics  # Automated list of Disney's official classics
+  - pmm: studio           # Adds the Studio logos
+    template_variables:
+      include: [Disney, Pixar, DreamWorks, Studio Ghibli]
+
 collections:
-  Kids Favorites:
-    smart_filter:
-      limit: 50
+  Bedtime Favorites:
+    smart_label: all_play_count.desc
+    filters:
+      content_rating: G
+      play_count.gt: 5
+    summary: The movies they watch over and over again.
