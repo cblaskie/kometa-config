@@ -14,3 +14,24 @@ collections:
       all:
         title.icontains: Bluey
     summary: Everything Bluey in one place.
+
+  # Existing Collections (Winnie the Pooh, etc.)
+  Winnie the Pooh Universe:
+    plex_search:
+      all:
+        title.icontains: "Winnie the Pooh"
+    summary: "Return to the Hundred Acre Wood with all your favorite friends."
+
+  # New: Daniel Tiger's Neighborhood
+  Daniel Tiger Universe:
+    plex_search:
+      all:
+        title.icontains: "Daniel Tiger"
+    summary: "Ugga Mugga! Join Daniel Tiger and his friends in the Neighborhood of Make-Believe."
+
+  # New: The Magic School Bus
+  Magic School Bus Universe:
+    plex_search:
+      all:
+        title.icontains: "Magic School Bus"
+    summary: "Seatbelts, everyone! Take a chance, make mistakes, and get messy with Ms. Frizzle."
