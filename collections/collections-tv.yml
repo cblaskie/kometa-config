@@ -1,0 +1,11 @@
+############################################################
+# Main TV Universes - Blaskielab
+############################################################
+
+collections:
+  # Focus on major TV franchises here
+  Star Trek Universe:
+    plex_search:
+      all:
+        title.icontains: "Star Trek"
+    summary: Boldly going where no one has gone before.
