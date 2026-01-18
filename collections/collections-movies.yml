@@ -1,0 +1,16 @@
+############################################################
+# Main Movie Universes - Blaskielab
+############################################################
+
+collections:
+  Marvel Cinematic Universe:
+    template: { name: marvel }
+    summary: The complete saga of the MCU.
+
+  DC Universe:
+    template: { name: dc_universal }
+    summary: Heroes and villains of the DC Multiverse.
+
+  # Add any other specific adult franchises here
+  John Wick Collection:
+    template: { name: franchise, variables: { tmdb_id: 635159 } }
