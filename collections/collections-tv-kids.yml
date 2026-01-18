@@ -1,0 +1,28 @@
+############################################################
+# Kids TV Universes - Blaskielab
+############################################################
+
+collections:
+  Winnie the Pooh Universe:
+    plex_search:
+      all:
+        title.icontains: "Winnie the Pooh"
+    summary: "Return to the Hundred Acre Wood with all your favorite friends."
+
+  Daniel Tiger Universe:
+    plex_search:
+      all:
+        title.icontains: "Daniel Tiger"
+    summary: "Ugga Mugga! Join Daniel Tiger and his friends."
+
+  Magic School Bus Universe:
+    plex_search:
+      all:
+        title.icontains: "Magic School Bus"
+    summary: "Seatbelts, everyone! Time to get messy with Ms. Frizzle."
+    
+  Bluey Universe:
+    plex_search:
+      all:
+        title.icontains: "Bluey"
+    summary: For real life! Join Bluey, Bingo, Bandit, and Chilli.
