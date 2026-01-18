@@ -1,8 +1,16 @@
 ############################################################
-# Kids TV Library
+# Kids TV - Blaskielab Metadata
 ############################################################
 
+metadata_path:
+  - pmm: streaming        # Disney+, Netflix Kids
+  - pmm: network          # Nick Jr, Disney Junior, PBS Kids
+  - pmm: franchise        # Groups Bluey, Mickey Mouse, etc.
+  - pmm: decade           # 90s/2000s Kids TV collections
+
 collections:
-  Kids Shows:
-    smart_filter:
-      limit: 50
+  Bluey Universe:
+    plex_search:
+      all:
+        title.icontains: Bluey
+    summary: Everything Bluey in one place.
