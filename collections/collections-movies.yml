@@ -11,6 +11,25 @@ collections:
     template: { name: dc_universal }
     summary: Heroes and villains of the DC Multiverse.
 
-  # Add any other specific adult franchises here
+  # John Wick - Pithy Edition
   John Wick Collection:
-    template: { name: franchise, variables: { tmdb_id: 635159 } }
+    template: { name: franchise, variables: { tmdb_id: 263320 } }
+    summary: "Don't kill his dog. The legendary hitman's relentless war against the High Table."
+ 
+  The Edgar Wright Collection:
+    plex_search:
+      all:
+        director: Edgar Wright
+    summary: "Visual comedy, rhythmic editing, and perfect soundtracks. The cinematic world of Edgar Wright."
+
+  # Tarantino Universe
+  The Tarantino Collection:
+    plex_search:
+      all:
+        director: Quentin Tarantino
+    summary: "Sharp dialogue, stylized violence, and nonlinear cool. The definitive works of Quentin Tarantino."
+
+  # James Bond (Uses PMM template for perfect ordering)
+  James Bond:
+    template: { name: franchise, variables: { tmdb_id: 645 } }
+    summary: "The name is Bond. James Bond. The complete 007 archive."
