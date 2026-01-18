@@ -3,9 +3,24 @@
 ############################################################
 
 collections:
-  # Focus on major TV franchises here
-  Star Trek Universe:
+  # British Panel & Game Shows
+  British Wit & Games:
     plex_search:
-      all:
-        title.icontains: "Star Trek"
-    summary: Boldly going where no one has gone before.
+      any:
+        title.icontains: [Taskmaster, Big Fat Quiz, Game Changer, Dirty Laundry, Great British Bake Off]
+    summary: "The best of British panel shows and modern high-stakes games."
+    # Kometa will apply your Montserrat-Bold titles from Posterizarr.
+
+  # Letterkenny & Shoresy
+  Letterkenny Universe:
+    plex_search:
+      any:
+        title.icontains: [Letterkenny, Shoresy]
+    summary: "Pitter patter, let's get at 'er. The complete Crave originals collection."
+
+  # Dystopian & Sci-Fi
+  Dystopian & Sci-Fi:
+    plex_search:
+      any:
+        title.icontains: [Severance, Fallout, Stranger Things, Squid Game, Silo]
+    summary: "High-concept worlds and dystopian futures."
