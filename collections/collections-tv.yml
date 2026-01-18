@@ -18,9 +18,8 @@ collections:
         title.icontains: [Letterkenny, Shoresy]
     summary: "Pitter patter, let's get at 'er. The complete Crave originals collection."
 
-  # Dystopian & Sci-Fi
-  Dystopian & Sci-Fi:
+  The Sitcom Central:
     plex_search:
       any:
-        title.icontains: [Severance, Fallout, Stranger Things, Squid Game, Silo]
-    summary: "High-concept worlds and dystopian futures."
+        title.icontains: [Friends, How I Met Your Mother, The Office, Seinfeld, New Girl, Brooklyn Nine-Nine, Modern Family]
+    summary: "Laugh tracks, coffee shops, and the comforts of the half-hour comedy. The definitive sitcom collection."
