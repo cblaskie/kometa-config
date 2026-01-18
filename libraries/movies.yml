@@ -1,9 +1,11 @@
 ############################################################
-# Movies Library
+# Main Movies - Blaskielab Metadata
 ############################################################
 
-collections:
-  Trending Movies:
-    smart_filter:
-      sort_by: audience_rating.desc
-      limit: 50
+metadata_path:
+  - pmm: marvel           # MCU Collection
+  - pmm: dc_universal     # DC Universe
+  - pmm: franchise        # All movie series (John Wick, etc)
+  - pmm: studio           # Production Company collections (A24, etc)
+  - pmm: decade           # Decades (90s, 80s, etc)
+  - pmm: holiday          # Seasonal rotations
