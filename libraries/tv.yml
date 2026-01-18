@@ -1,8 +1,8 @@
 ############################################################
-# TV Shows Library
+# Main TV - Blaskielab Metadata
 ############################################################
 
-collections:
-  Popular TV:
-    smart_filter:
-      limit: 50
+metadata_path:
+  - pmm: streaming        # Netflix, Max, etc.
+  - pmm: network          # HBO, AMC, etc.
+  - pmm: decade           # TV History by decade
