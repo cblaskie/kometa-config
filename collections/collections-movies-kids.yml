@@ -1,0 +1,22 @@
+############################################################
+# Kids Movie Universes - Blaskielab
+############################################################
+
+collections:
+  Winnie the Pooh Collection:
+    plex_search:
+      all:
+        title.icontains: "Winnie the Pooh"
+        studio: Disney
+    summary: "Deep in the Hundred Acre Wood, where Christopher Robin plays..."
+
+  Disney Classics:
+    template: { name: disney_classics }
+    summary: The official animated classics from Walt Disney Studios.
+
+  Bedtime Favorites:
+    smart_label: all_play_count.desc
+    filters:
+      content_rating: G
+      play_count.gt: 5
+    summary: The movies they watch over and over again.
