@@ -9,18 +9,3 @@ metadata_path:
   - pmm: studio           # Adds the Studio logos
     template_variables:
       include: [Disney, Pixar, DreamWorks, Studio Ghibli]
-
-collections:
-  Bedtime Favorites:
-    smart_label: all_play_count.desc
-    filters:
-      content_rating: G
-      play_count.gt: 5
-    summary: The movies they watch over and over again.
-  Winnie the Pooh Collection:
-    plex_search:
-      all:
-        title.icontains: "Winnie the Pooh"
-        studio: Disney
-    summary: "Deep in the Hundred Acre Wood, where Christopher Robin plays..."
-    # This will use the Montserrat-Bold title you set in Posterizarr
