@@ -6,6 +6,7 @@ libraries:
   Movies:
     metadata_path:
       - file: libraries/movies.yml
+      - file: libraries/collections-movies.yml
     overlay_files:
       - pmm: studio
         template_variables:
@@ -18,6 +19,7 @@ libraries:
   Kids Movies:
     metadata_path:
       - file: libraries/movies-kids.yml
+      - file: libraries/collections-movies-kids.yml
     overlay_files:
       - pmm: studio
         template_variables:
@@ -26,24 +28,10 @@ libraries:
           vertical_align: top
           opacity: 60
 
-  Kids TV:
-    metadata_path:
-      - file: libraries/tv-kids.yml
-    overlay_files:
-      - pmm: streaming
-        template_variables:
-          group: brand_logo
-          style: minimal
-          opacity: 70
-      - pmm: network
-        template_variables:
-          group: brand_logo
-          style: minimal
-          opacity: 70
-
   TV Shows:
     metadata_path:
       - file: libraries/tv.yml
+      - file: libraries/collections-tv.yml
     overlay_files:
       - pmm: streaming         # Priority 1: Netflix, Disney+, etc.
         template_variables:
@@ -60,6 +48,21 @@ libraries:
           vertical_align: top
           opacity: 70
 
+  Kids TV:
+    metadata_path:
+      - file: libraries/tv-kids.yml
+      - file: libraries/collections-tv-kids.yml
+    overlay_files:
+      - pmm: streaming
+        template_variables:
+          group: brand_logo
+          style: minimal
+          opacity: 70
+      - pmm: network
+        template_variables:
+          group: brand_logo
+          style: minimal
+          opacity: 70
 
 settings:
   cache: true
