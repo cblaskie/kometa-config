@@ -24,6 +24,22 @@ libraries:
           style: logo-only
           horizontal_align: left
           vertical_align: top
+          opacity: 60
+
+  Kids TV:
+    metadata_path:
+      - file: libraries/tv-kids.yml
+    overlay_files:
+      - pmm: streaming
+        template_variables:
+          group: brand_logo
+          style: minimal
+          opacity: 70
+      - pmm: network
+        template_variables:
+          group: brand_logo
+          style: minimal
+          opacity: 70
 
   TV Shows:
     metadata_path:
@@ -44,9 +60,6 @@ libraries:
           vertical_align: top
           opacity: 70
 
-  Kids TV:
-    metadata_path:
-      - file: libraries/tv-kids.yml
 
 settings:
   cache: true
