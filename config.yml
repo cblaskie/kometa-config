@@ -2,24 +2,47 @@
 # Kometa Global Configuration - Blaskielab Edition
 ############################################################
 
+# --- SERVICE CONNECTIONS ---
+plex:
+  url: http://plex:32400
+  token: xrp4J6m9ozCTthazZW9i
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+
+tmdb:
+  apikey: d65938742f6855ddf5001f4ef2bddca1
+  language: en
+  cache_expiration: 60
+
+mdblist:
+  apikey: y9hu9i4z1qbgcnc30q9dzmpva
+  cache_expiration: 60
+
+omdb:
+  apikey: 44c00535
+  cache_expiration: 60
+
+# --- LIBRARIES ---
 libraries:
   Movies:
-    metadata_path:
-      - file: libraries/movies.yml
-      - file: libraries/collections-movies.yml
+    collection_files:
+      - file: config/metadata/movies.yml
+      - file: config/metadata/collections-movies.yml
     overlay_files:
       - pmm: studio
         template_variables:
           style: logo-only     # Minimalist: no background box
           horizontal_align: left
           vertical_align: top
-          opacity: 60          # Elegant transparency
+          opacity: 60
     report_path: config/reports/movies.png
 
   Kids Movies:
-    metadata_path:
-      - file: libraries/movies-kids.yml
-      - file: libraries/collections-movies-kids.yml
+    collection_files:
+      - file: config/metadata/movies-kids.yml
+      - file: config/metadata/collections-movies-kids.yml
     overlay_files:
       - pmm: studio
         template_variables:
@@ -29,13 +52,13 @@ libraries:
           opacity: 60
 
   TV Shows:
-    metadata_path:
-      - file: libraries/tv.yml
-      - file: libraries/collections-tv.yml
+    collection_files:
+      - file: config/metadata/tv.yml
+      - file: config/metadata/collections-tv.yml
     overlay_files:
-      - pmm: streaming         # Priority 1: Netflix, Disney+, etc.
+      - pmm: streaming         # Priority: Netflix, Disney+, etc.
         template_variables:
-          group: brand_logo    # Only one logo from this group is shown
+          group: brand_logo
           style: minimal
           horizontal_align: left
           vertical_align: top
@@ -49,29 +72,30 @@ libraries:
           opacity: 70
 
   Kids TV:
-    metadata_path:
-      - file: libraries/tv-kids.yml
-      - file: libraries/collections-tv-kids.yml
+    collection_files:
+      - file: config/metadata/tv-kids.yml
+      - file: config/metadata/collections-tv-kids.yml
     overlay_files:
       - pmm: streaming
         template_variables:
           group: brand_logo
           style: minimal
           opacity: 70
-      - pmm: network
-        template_variables:
-          group: brand_logo
-          style: minimal
-          opacity: 70
 
+# --- GLOBAL SETTINGS ---
 settings:
   cache: true
   cache_expiration: 60
-  asset_directory: config/assets  # Shares art from Posterizarr & TCM
-  asset_folders: true             # Matches /Library/Title/poster.jpg structure
+  asset_directory: config/assets
+  asset_folders: true
   asset_depth: 0
-  prioritize_assets: true         # Uses your custom Montserrat/ClearArt art first
+  prioritize_assets: true      # Uses your local custom art first
   run_order:
     - metadata
     - collections
     - overlays
+
+operations:
+  delete_collections:
+    configured: false
+    unmanaged: false
