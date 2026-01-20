@@ -28,8 +28,8 @@ omdb:
 libraries:
   Movies:
     collection_files:
-      - file: config/metadata/movies.yml
-      - file: config/metadata/collections-movies.yml
+      - file: config/collections/movies.yml
+      - file: config/collections/collections-movies.yml
     overlay_files:
       - pmm: studio
         template_variables:
@@ -41,8 +41,8 @@ libraries:
 
   Kids Movies:
     collection_files:
-      - file: config/metadata/movies-kids.yml
-      - file: config/metadata/collections-movies-kids.yml
+      - file: config/collections/movies-kids.yml
+      - file: config/collections/collections-movies-kids.yml
     overlay_files:
       - pmm: studio
         template_variables:
@@ -53,8 +53,8 @@ libraries:
 
   TV Shows:
     collection_files:
-      - file: config/metadata/tv.yml
-      - file: config/metadata/collections-tv.yml
+      - file: config/collections/tv.yml
+      - file: config/collections/collections-tv.yml
     overlay_files:
       - pmm: streaming         # Priority: Netflix, Disney+, etc.
         template_variables:
@@ -73,8 +73,8 @@ libraries:
 
   Kids TV:
     collection_files:
-      - file: config/metadata/tv-kids.yml
-      - file: config/metadata/collections-tv-kids.yml
+      - file: config/collections/tv-kids.yml
+      - file: config/collections/collections-tv-kids.yml
     overlay_files:
       - pmm: streaming
         template_variables:
