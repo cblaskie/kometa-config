@@ -37,6 +37,7 @@ libraries:
           horizontal_align: left
           vertical_align: top
           opacity: 60
+          addon: pmm
     report_path: config/reports/movies.png
 
   Kids Movies:
@@ -50,6 +51,7 @@ libraries:
           horizontal_align: left
           vertical_align: top
           opacity: 60
+          addon: pmm
 
   TV Shows:
     collection_files:
