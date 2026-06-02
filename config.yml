@@ -1,5 +1,5 @@
 ############################################################
-# Kometa Global Configuration - Blaskielab Edition
+# Kometa Global Configuration - Blaskielab Edition (Posterizarr Sync)
 ############################################################
 
 # --- SERVICE CONNECTIONS ---
@@ -27,6 +27,8 @@ omdb:
 # --- LIBRARIES ---
 libraries:
   Movies:
+    # 👈 POINTS DIRECTLY to Posterizarr's output folder inside your assets share
+    asset_directory: config/assets/Movies 
     collection_files:
       - file: config/collections/movies.yml
       - file: config/collections/collections-movies.yml
@@ -41,6 +43,8 @@ libraries:
     report_path: config/reports/movies.png
 
   Kids Movies:
+    # 👈 POINTS DIRECTLY to Posterizarr's kids movie folder
+    asset_directory: config/assets/Kids Movies 
     collection_files:
       - file: config/collections/movies-kids.yml
       - file: config/collections/collections-movies-kids.yml
@@ -54,6 +58,8 @@ libraries:
           addon: pmm
 
   TV Shows:
+    # 👈 POINTS DIRECTLY to Posterizarr's TV show folder
+    asset_directory: config/assets/TV Shows 
     collection_files:
       - file: config/collections/tv.yml
       - file: config/collections/collections-tv.yml
@@ -74,6 +80,8 @@ libraries:
           opacity: 70
 
   Kids TV:
+    # 👈 POINTS DIRECTLY to Posterizarr's Kids TV show folder
+    asset_directory: config/assets/Kids TV 
     collection_files:
       - file: config/collections/tv-kids.yml
       - file: config/collections/collections-tv-kids.yml
@@ -89,13 +97,13 @@ settings:
   cache: true
   cache_expiration: 60
   asset_directory: config/assets
-  asset_folders: true
+  asset_folders: false           # 🌟 CHANGED TO FALSE: Tells Kometa to expect loose images named after titles
   asset_depth: 0
-  prioritize_assets: true      # Uses your local custom art first
+  prioritize_assets: true      # 🌟 FORCE: Uses Posterizarr's cooked art first
   run_order:
     - metadata
     - collections
-    - overlays
+    - overlays                   # 🌟 CRUCIAL: Overlays execute last, applying logos on top of Posterizarr's art
 
 operations:
   delete_collections:
